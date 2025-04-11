@@ -89,6 +89,7 @@ def run_simulation():
         messagebox.showerror("Invalid Input", "Please enter valid numbers for pages and frames!")
 
 # ------------------ GUI Setup ------------------ #
+# INTERFACE
 root = tk.Tk()
 root.title("Virtual Memory Simulator")
 root.geometry("400x250")
