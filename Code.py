@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from collections import deque
 
 # ------------------ Page Replacement Algorithms ------------------ #
+# GOLDI'S PART
 def fifo_page_replacement(pages, frames):
     queue = deque()
     page_faults = 0
@@ -43,6 +44,7 @@ def lru_page_replacement(pages, frames):
     return page_faults, memory_state
 
 # ------------------ Visualization ------------------ #
+# RISHIK'S PART
 def visualize_algorithm(pages, frames, algorithm):
     if algorithm == "FIFO":
         faults, memory_state = fifo_page_replacement(pages, frames)
@@ -70,6 +72,7 @@ def visualize_algorithm(pages, frames, algorithm):
     return faults
 
 # ------------------ Simulation Trigger ------------------ #
+# PRIYANSHU'S PART'
 def run_simulation():
     try:
         pages = list(map(int, entry_pages.get().split()))
