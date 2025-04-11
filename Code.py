@@ -3,6 +3,10 @@ from tkinter import messagebox, ttk
 import matplotlib.pyplot as plt
 from collections import deque
 
+# OPERATING SYSTEM PROJECT
+# VIRTUAL MEMORY SIMULATOR
+
+
 # ------------------ Page Replacement Algorithms ------------------ #
 # GOLDI'S PART
 def fifo_page_replacement(pages, frames):
@@ -124,3 +128,6 @@ ttk.Radiobutton(frame, text="LRU", variable=algo_choice, value="LRU").grid(row=3
 ttk.Button(frame, text="Run Simulation", command=run_simulation).grid(row=4, column=0, columnspan=2, pady=15)
 
 root.mainloop()
+
+
+# END OF CODE
